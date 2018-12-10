@@ -1,0 +1,34 @@
+﻿@model CookBookAdoWeb.Models.Unit
+
+@{
+    ViewBag.Title = "Детали";
+}
+
+<h2>Детали</h2>
+
+<div>
+    @*<h4>Unit</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.IdUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUnit)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameUnit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Вернуться", "Index")
+</p>

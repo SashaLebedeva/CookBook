@@ -1,0 +1,39 @@
+﻿@model CookBookAdoWeb.Models.TypeOfDish
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2>Удаление</h2>
+
+<h3 style="color:red">Вы уверены, что хотите удалить? Есть возможность потери информации</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.IdType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdType)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удаление" class="btn btn-default" /> |
+            @Html.ActionLink("Вернуться", "Index")
+        </div>
+    }
+</div>
